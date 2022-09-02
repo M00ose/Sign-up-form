@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <container>
+      <img src="img/odin-lined.png" alt="The Odin Project Logo" class="logo" />
+      <img src="img/bg.jpg" alt="green leaf plant" class="background" />
+      <section class="content">
+        <div class="form-top">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <i>now</i> to get started.
+          </p>
+          <p>You <i>know</i> you want to.</p>
+        </div>
+        <div class="form-main">
+          <p>Let's do this</p>
+          <form action="#" method="get">
+            <div>
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" placeholder="John" required />
+            </div>
+            <div>
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" placeholder="Doe" required />
+            </div>
+            <div>
+              <label for="emailAddress">Email</label>
+              <input
+                type="email"
+                name="emailAddress"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input
+                type="text"
+                name="phone"
+                placeholder="+99(99)9999-9999"
+                pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
+                title="Phone number invalid, example:
+              +99(99)9999-9999"
+                required
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                required
+              />
+            </div>
+            <div>
+              <label for="confirmPass">Confirm Password</label>
+              <input type="password" name="confirmPass" />
+            </div>
+            <button type="submit">Create an Account</button>
+          </form>
+        </div>
+        <div class="form-bottom">
+          <p class="subtitle">
+            Already have an account? <span><a href="#">Log in</a></span>
+          </p>
+        </div>
+      </section>
+    </container>
+  </body>
+  <script src="code.js"></script>
+</html>
